@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+body {
+    background-color: bisque;
+    position: relative;
+
+
+}
+
+main {
+    background-color: #fff;
+    border-radius: 1%;
+    margin:50px auto ;
+    position: absolute;
+    right: 25%;
+    left: 25%;
+
+
+}
+
+#omelette .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+#omelette .row img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+#omelette .row h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p,
+li {
+    font-size: 15px;
+    color: gray;
+    margin: auto 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+li {
+    padding: 5px 0;
+    word-spacing: 3px;
+
+}
+
+#Preparation-time .col,
+#Ingredients .col,
+#Instructions .col,
+#nutrition .row {
+    margin: 10px 35px;
+}
+
+#Preparation-time .col {
+    border-radius: 5px;
+    background-color: #fff5fa;
+}
+
+#Preparation-time h2 {
+    color: #4e1d2d;
+}
+
+#Preparation-time h2 {
+    font-size: 35px;
+}
+
+#Preparation-time .Preparation-time-list {
+    margin-left: 5px;
+    list-style-position: inside;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+#Ingredients .col h2,
+#Instructions .col h2,
+#nutrition .row h2 {
+    color: #8B4513;
+    font-size: 30px;
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+
+
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* table start */
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    position: relative;
+}
+
+
+th::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background-color: #ddd;
+    width: 150%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+}
+
+th {
+    font-weight: bold;
+    font-family: "Outfit", sans-serif;
+    color: gray;
+
+
+}
+
+td {
+    color: #8B4513;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+
+}
+
+
+ol li::marker,
+ul li::marker {
+    color: #8B4513;
+    font-weight: bold;
+}
+
+@media(max-width :480px) {
+
+    #omelette .row h1 {
+        font-size: 45px;
+        padding-left: 10px;
+    }
+
+    #Preparation-time h2 {
+        font-size: 25px;
+        padding-left: 30px;
+        padding-top: 15px;
+    }
+
+    main {
+        left: -25px;
+        right: -25px;
+    }
+
+    p {
+        font-size: 17px;
+        padding: 10px 10px;
+    }
+}
